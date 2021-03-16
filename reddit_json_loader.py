@@ -52,7 +52,7 @@ for i in subs:
         json_str = json.dumps(list_of_items)
 
         
-with open(str(output_directory)+'reddit_data'+str(today)+'.json', 'w') as f:
+with open(str(output_directory)+'reddit_data'+str(now)+'.json', 'w') as f:
     json.dump(list_of_items, f)
 
 
