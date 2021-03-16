@@ -7,6 +7,11 @@ This project aims to acheive the following:
 - Perform NLTK Sentiment algorithim on Reddit Objects
 - Scan Reddit objects for instances of user-defined keywords and label matches
 
+
+![Blank Diagram](https://user-images.githubusercontent.com/39444980/111358588-bd337c00-8647-11eb-8014-e4fb177ae200.png)
+
+
+
 <b>Background</b>:
   
   This project was created from the perspective of a hypothetical social media / customer experience manager who wishes to create a data feed and dashboard that better contextualizes the conversations among members of the Toyota communities. Every day, hundreds of discussions occur across dozens of distinct Toyota communities that cover Q&A, tips and tricks, maintainence, accessories, and more. 
