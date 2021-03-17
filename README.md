@@ -5,7 +5,7 @@ This project aims to acheive the following:
 - Extract data from multiple instances of PRAW (Reddit API Wrapper) 
 - Transform and clean data into an intepretable and loadable format 
 - Perform NLTK Sentiment algorithim on Reddit Objects
-- Scan Reddit objects for instances of user-defined keywords and label matches
+- Scan Reddit objects for instances of user-defined keywords and language taxonomy.
 
 
 ![Blank Diagram](https://user-images.githubusercontent.com/39444980/111358588-bd337c00-8647-11eb-8014-e4fb177ae200.png)
