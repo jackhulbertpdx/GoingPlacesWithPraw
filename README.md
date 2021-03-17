@@ -18,6 +18,12 @@ This project aims to acheive the following:
   
   This hypothetical user has also modeled a taxonomy of Keywords and Topics that she would like to extract from the PRAW model.
   
+<b>Summary of Problem</b>:
+  Social media and text data is difficult to analyze with industry standard tools because it often times fails to capture nuance and context of what the user is referencing. In this example, the users are car owners committing to different Subreddits and mentioning problems they are having with their cars, in many cases without explicitly mentioning the model and year. As a social media / CX manager, you would want to understand exactly which year and model customers are referencing when they speak of an issue or potential defect.
+
+
+
+
   <b>Collecting our Data:</b>
   
  
