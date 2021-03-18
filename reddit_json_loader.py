@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
+import csv
 import sys
 import json
 import pandas as pd
@@ -10,20 +10,25 @@ from pandas import DataFrame
 import datetime as dt
 from datetime import datetime
 import praw
-import urllib.request
 import itertools
-
+import sqlalchemy
+import time
+import pandas as pd
+from sqlalchemy import create_engine
+import psycopg2
+psycopg2.extensions.register_type(psycopg2.extensions.UNICODE)
+psycopg2.extensions.register_type(psycopg2.extensions.UNICODEARRAY)
 
 # This script extracts data from the Reddit using the PRAW wrapper 
-# from a list of Subreddits and appends them into a JSON object
+# from a list of Subreddits and appends them into a csv object
 
-#Define Output Directory for JSON Files
+#Define Output Directory for csv Files
 
-output_directory = "/Home/Name/Path/"
+output_directory = "/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Raw Data/"
 
-#Datetime value that will be appended to JSON file name
+#Datetime value that will be appended to csv file name
 
-now = dt.datetime.now()
+today = dt.datetime.now()
 
 #Create container for PRAW data and intercept fields from the Subreddit class
 
@@ -41,19 +46,18 @@ r = praw.Reddit(client_id='id',
                 user_agent='agent')
 
 # Function that initiates a call to each subreddit in the defined list 
-# and appends the data to a dict and dumps the JSON file into our directory.
+# and appends the data to a dict and dumps the csv file into our directory.
 
 for i in subs:
-    for submission in r.subreddit(i).new(limit=None):
+    for submission in r.subreddit(i).new(limit=10):
         to_dict = vars(submission)
         sub_dict = {field:to_dict[field] for field in fields}
         list_of_items.append(sub_dict)
+        output=DataFrame(list_of_items)
+        output[['id','title', 'url','selftext','name', 'score', 'created_utc', 'num_comments','permalink']]= output[['id','title', 'url','selftext','name', 'score', 'created_utc', 'num_comments','permalink']].astype(str)
 
-        json_str = json.dumps(list_of_items)
+output.to_csv(str(output_directory)+'reddit_data'+str(today)+'.csv')
 
-        
-with open(str(output_directory)+'reddit_data'+str(now)+'.json', 'w') as f:
-    json.dump(list_of_items, f)
 
 
 
