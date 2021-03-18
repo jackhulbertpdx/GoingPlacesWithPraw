@@ -26,7 +26,7 @@ from urllib.parse import urlparse
 #####
 
 #//STEP 1//#
-# The first part of this script reads in JSON files from the prior processing step,
+# The first part of this script reads in csv files from the prior processing step,
 # converts it to a dataframe, cleans and converts text fields into a usable format, and then
 # applies NLTK's sentiment analyzer to allocate a numerical sentiment value to each reddit object.
 
