@@ -50,13 +50,13 @@ from urllib.parse import urlparse
 
 #Read in JSONs pulled from step 1 into local directory and merge them 
 
-os.chdir("Home/Path/Raw Data")
-extension = 'json'
+os.chdir("/path")
+extension = 'csv'
 all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
 
 #Convert JSON objects into a pandas dataframe
 for i in all_filenames:
-    data=pd.read_json(i)
+    data=pd.read_csv(i)
 #Convert UTC to human readable timestamp and rename cols
     data['created_utc']=(pd.to_datetime(data['created_utc'],unit='s'))
     data['body']= data['selftext']
@@ -89,7 +89,7 @@ for n in data['clean_title'],data['clean_body']:
 #One of the outcomes of this exercise is to give the end user the ability to search for permutations of owners mentioning the make and model of their car.
 #Create a list from a range of years to scan text for customers mentioning vintage of their Toyota
 
-years = "|".join(map(str,(range(1900,5000))))
+years = "|".join(map(str,(range(1940,2022))))
 
 #Extract year values from text columns
 
@@ -100,7 +100,7 @@ data['Model Year']=data['body_year'].fillna(data['title_year'])
 
 #Apply sentiment algorithim to 'Body' field where the user typically enters their message or post.
 
-text = data['body'] #Column being evaluated from dataframe
+text = data['body'].astype(str) #Column being evaluated from dataframe
 scores = [] #Container that will house the numerical score given by SID
 sid = SentimentIntensityAnalyzer() #Define Sentiment Model 
 
@@ -128,7 +128,7 @@ data.drop(['title_year','body_year','selftext'], axis=1)
 #//STEP 2//#
 
 #Read in CSV defined and managed by user
-classification = pd.read_csv('Home/Path//Classification Model.csv')
+classification = pd.read_csv('/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Classification.csv')
 
 #Pivot data to make each column a keyword class and cell values the keywords from each class
 
@@ -160,7 +160,8 @@ data=data.drop(['combination','combination'], axis=1)
 
 current_date = dt.datetime.now()
 filename = str(current_date.day)+str(current_date.month)+str(current_date.year)
-data.to_csv('Home/Path/reddit-feed-'+str(filename + '.csv'))
+data.to_csv('reddit-feed-'+str(filename + '.csv'))
+
 
 
 
