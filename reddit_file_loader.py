@@ -16,8 +16,7 @@ import time
 import pandas as pd
 from sqlalchemy import create_engine
 import psycopg2
-psycopg2.extensions.register_type(psycopg2.extensions.UNICODE)
-psycopg2.extensions.register_type(psycopg2.extensions.UNICODEARRAY)
+
 
 # This script extracts data from the Reddit using the PRAW wrapper 
 # from a list of Subreddits and appends them into a csv object
