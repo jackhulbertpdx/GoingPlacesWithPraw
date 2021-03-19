@@ -128,7 +128,7 @@ data.drop(['title_year','body_year','selftext'], axis=1)
 #//STEP 2//#
 
 #Read in CSV defined and managed by user
-classification = pd.read_csv('/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Classification.csv')
+classification = pd.read_csv('/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Keyword_Taxonomy.csv')
 
 #Pivot data to make each column a keyword class and cell values the keywords from each class
 
