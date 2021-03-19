@@ -1,0 +1,490 @@
+Category,Topic,Keywords
+Subject,Car Parts-Internal,battery
+Subject,Car Parts-Internal,breaks
+Subject,Car Parts-Internal,axle
+Subject,Car Parts-Internal,fuel injector
+Subject,Car Parts-Internal,piston
+Subject,Car Parts-Internal,compressor
+Subject,Car Parts-Internal,radiator
+Subject,Car Parts-Internal,engine fan
+Subject,Car Parts-Internal,clutch
+Subject,Car Parts-Internal,car jack
+Subject,Car Parts-Internal,spare tire
+Subject,Car Parts-Internal,transmission
+Subject,Car Parts-Internal,shock absorbers
+Subject,Car Parts-Internal,air filter
+Subject,Car Parts-Internal,spark plug
+Subject,Car Parts-Internal,catalytic converter
+Subject,Car Parts-Internal,muffler
+Subject,Car Parts-Internal,tire pressure gauge
+Subject,Car Parts-Internal,alternator
+Subject,Car Parts-Internal,power steering fluid
+Subject,Car Parts-Internal,vacuum
+Subject,Car Parts-Internal,starter
+Subject,Car Parts-Internal,charger
+Subject,Car Parts-Internal,oil
+Subject,Car Parts-Internal,mats
+Subject,Car Parts-Internal,power station
+Subject,Car Parts-Internal,stereo
+Subject,Car Parts-Internal,tires
+Subject,Car Parts-Internal,ebrakes
+Subject,Car Parts-Internal,brake
+Subject,Car Parts-Internal,emeregency brakes
+Subject,Car Parts-Internal,emeregency brake
+Subject,Car Parts-Internal,fuel line
+Subject,Car Parts-Internal,manifold
+Subject,Car Parts-Internal,tranny
+Subject,Car Parts-Internal,windshield
+Subject,Car Parts-Internal,wipers
+Subject,Car Parts-Internal,carb
+Subject,Car Parts-Internal,carburetor
+Subject,Car Parts-Internal,axle
+Subject,Car Parts-Internal,jump starter
+Subject,Car Parts-Internal,inverter
+Subject,Performance-Fuel Economy,fuel economy
+Subject,Performance-Fuel Economy,gas milage
+Subject,Performance-Fuel Economy,mpg
+Subject,Performance-Fuel Economy,kpg
+Subject,Performance-Fuel Economy,milage
+Subject,Performance-Off Road,4wd
+Subject,Performance-Off Road,snow
+Subject,Performance-Off Road,mud
+Subject,Performance-Off Road,snow
+Subject,Performance-Off Road,overlanding
+Subject,Performance-Off Road,overland
+Subject,Performance-Off Road,mudding
+Subject,Performance-Longevity,goes forever
+Subject,Performance-Longevity,mile club
+Subject,Performance-Longevity,km club
+Subject,Performance-Longevity,since i was
+Subject,Performance-Longevity,for years
+Subject,Performance-Longevity,bulletproof
+Subject,Performance-Longevity,will never die
+Subject,Performance-Longevity,outlive me
+Subject,Car Parts-External,paint
+Subject,Car Parts-External,lights
+Subject,Car Parts-External,bumper
+Subject,Car Parts-External,glass
+Subject,Car Parts-External,window
+Subject,Car Parts-External,mirrors
+Subject,Car Parts-External,mirror
+Subject,Car Parts-External,windshield
+Subject,Car Parts-External,wind shield
+Subject,Car Parts-External,sunroof
+Subject,Car Parts-External,sun roof
+Subject,Dealership/Sales,the dealer
+Subject,Dealership/Sales,the dealership
+Subject,Dealership/Sales,at the lot
+Subject,Dealership/Sales,the salesman
+Subject,Dealership/Sales,the salesperson
+Subject,Frustration,aggravating
+Context,Frustration,miserable
+Context,Frustration,is a joke
+Context,Frustration,irritating
+Context,Frustration,frustrated
+Context,Frustration,frustrating
+Context,Frustration,tired of
+Context,Frustration,aggravated
+Context,Frustration,irratates
+Context,Frustration,sick of
+Context,Frustration,absurd
+Context,Frustration,annoying
+Context,Frustration,ridiculous
+Context,Frustration,waste of time
+Context,Frustration,frustrated
+Context,Frustration,terrible
+Context,Frustration,nightmare
+Context,Frustration,outrageous
+Context,Confusion,don't understand
+Context,Confusion,dont understand
+Context,Confusion,not aware
+Context,Confusion,unaware
+Context,Confusion,dont know how
+Context,Confusion,don't know how
+Context,Confusion,confused
+Context,Confusion,can't figure it out
+Context,Confusion,cant figure it out
+Context,Confusion,no sense
+Context,Confusion,confusing
+Context,Confusion,didnt realize
+Context,Confusion,didn't realize
+Context,Negative Perception,not happy
+Context,Negative Perception,pissed off
+Context,Negative Perception,sucks
+Context,Negative Perception,rip off
+Context,Negative Perception,not worth it
+Context,Negative Perception,sick of this
+Context,Negative Perception,hate it
+Context,Negative Perception,hate this
+Context,Negative Perception,stupid
+Context,Negative Perception,not a happy
+Context,Negative Perception,upset
+Context,Compatability,compatible
+Subject,Compatability,compatable
+Subject,Compatability,if this will fit
+Subject,Compatability,fit in
+Subject,Compatability,will this fit
+Subject,Compatability,this work with
+Subject,Performance-Longevity,lasted for miles
+Subject,Performance-Longevity,miles
+Subject,Car Parts-Internal,rotors
+Subject,Car Parts-Internal,rotors
+Subject,Performance-Longevity,high mileage
+Subject,Performance-Longevity,mileage club
+Subject,Features,lane centering
+Subject,Features,bluetooth
+Subject,Features,backup
+Subject,Features,backup cam
+Subject,Features,backup camera
+Subject,Car Parts-Internal,accelerator
+Subject,Car Parts-Internal,incline
+Subject,Features,heated seats
+Subject,Features,seats
+Subject,Features,power windows
+Subject,Features,windows
+Subject,Features,nav
+Subject,Features,carplay
+Subject,Features,navigation
+Subject,Features,abs
+Subject,Features,anti lock
+Subject,Features,antilock
+Subject,Car Parts-External,headlights
+Subject,Car Parts-External,head lights
+Subject,Car Parts-External,head light
+Subject,Car Parts-External,bumper
+Subject,Car Parts-External,headlight
+Subject,Car Parts-External,trunk
+Subject,Positive Perception,high quality
+Context,Positive Perception,can't beat it
+Context,Positive Perception,amazing
+Context,Positive Perception,wonderful
+Context,Positive Perception,love it
+Context,Positive Perception,insane
+Context,Positive Perception,love my
+Context,Positive Perception,a dream
+Context,Positive Perception,a beast
+Context,Positive Perception,workhorse
+Context,Positive Perception,my baby
+Context,Positive Perception,my fav
+Context,Positive Perception,favorite
+Context,Positive Perception,loving this
+Context,Positive Perception,loving it
+Context,Positive Perception,obsessed
+Subject,Defects,issue with
+Subject,Defects,wont open
+Subject,Defects,won't open
+Subject,Defects,glitch
+Subject,Defects,keeps breaking
+Subject,Defects,snapping
+Subject,Defects,fraying
+Subject,Defects,cracked
+Subject,Defects,cracking
+Subject,Defects,a sound
+Subject,Defects,this sound
+Subject,Defects,issues with
+Subject,Defects,issue with
+Subject,Defects,dying
+Subject,Defects,wont't connect
+Subject,Defects,wont connect
+Subject,Defects,errors
+Subject,Defects,malfunction
+Subject,Car Parts-Internal,brakes
+Subject,Car Parts-External,tires
+Model,4Runner,4runner
+Model,4Runner,runner
+Model,Avalon,avalon
+Model,Avanza,avanza
+Model,Camry,camry
+Model,CHR,c-hr
+Model,Celica,celica
+Model,Corolla,corolla
+Model,Corolla,corolla im
+Model,Cressida,cressida
+Model,Echo,echo
+Model,FJ Cruiser,fj
+Model,FJ Cruiser,fj cruiser
+Model,Hiace,hiace
+Model,Hiace,super gl
+Model,Highlander,highlander
+Model,Hilux,hilux
+Model,Land cruiser,land cruiser
+Model,Matrix,matrix
+Model,Previa,previa
+Model,Rav4,rav4
+Model,Rav4,rav
+Model,Sequoia,sequoia
+Model,Sienna,sienna
+Model,Solara,solara
+Model,Suprra,supra
+Model,T100,t100
+Model,Tacoma,tacoma
+Model,Tacoma,taco
+Model,Tercel,tercel
+Model,Tundra,tundra
+Model,Venza,venza
+Model,Yaris,yaris
+Model,Prius,prius
+Model,Frustration,aggravating
+Context,Frustration,miserable
+Context,Frustration,is a joke
+Context,Frustration,irritating
+Context,Frustration,frustrated
+Context,Frustration,frustrating
+Context,Frustration,tired of
+Context,Frustration,aggravated
+Context,Frustration,irratates
+Context,Frustration,sick of
+Context,Frustration,absurd
+Context,Frustration,annoying
+Context,Frustration,ridiculous
+Context,Frustration,waste of time
+Context,Frustration,frustrated
+Context,Frustration,terrible
+Context,Frustration,nightmare
+Context,Frustration,outrageous
+Context,Confusion,don't understand
+Context,Confusion,dont understand
+Context,Confusion,not aware
+Context,Confusion,unaware
+Context,Confusion,dont know how
+Context,Confusion,don't know how
+Context,Confusion,confused
+Context,Confusion,can't figure it out
+Context,Confusion,cant figure it out
+Context,Confusion,no sense
+Context,Confusion,confusing
+Context,Confusion,didnt realize
+Context,Confusion,didn't realize
+Context,Negative Perception,not happy
+Context,Negative Perception,pissed off
+Context,Negative Perception,sucks
+Context,Negative Perception,rip off
+Context,Negative Perception,not worth it
+Context,Negative Perception,sick of this
+Context,Negative Perception,hate it
+Context,Negative Perception,hate this
+Context,Negative Perception,stupid
+Context,Negative Perception,not a happy
+Context,Negative Perception,upset
+Context,Compatability,compatible
+Subject,Compatability,compatable
+Subject,Compatability,if this will fit
+Subject,Compatability,fit in
+Subject,Compatability,will this fit
+Subject,Compatability,this work with
+Subject,Performance-Longevity,lasted for miles
+Subject,Performance-Longevity,miles
+Subject,Car Parts-Internal,rotors
+Subject,Car Parts-Internal,rotors
+Subject,Performance-Longevity,high mileage
+Subject,Performance-Longevity,mileage club
+Subject,Features,lane centering
+Subject,Features,bluetooth
+Subject,Features,backup
+Subject,Features,backup cam
+Subject,Features,backup camera
+Subject,Car Parts-Internal,accelerator
+Subject,Car Parts-Internal,incline
+Subject,Features,heated seats
+Subject,Features,seats
+Subject,Features,power windows
+Subject,Features,windows
+Subject,Features,nav
+Subject,Features,carplay
+Subject,Features,navigation
+Subject,Features,abs
+Subject,Features,anti lock
+Subject,Features,antilock
+Subject,Car Parts-External,headlights
+Subject,Car Parts-External,head lights
+Subject,Car Parts-External,head light
+Subject,Car Parts-External,bumper
+Subject,Car Parts-External,headlight
+Subject,Car Parts-External,trunk
+Subject,Positive Perception,high quality
+Context,Positive Perception,can't beat it
+Context,Positive Perception,amazing
+Context,Positive Perception,wonderful
+Context,Positive Perception,love it
+Context,Positive Perception,insane
+Context,Positive Perception,love my
+Context,Positive Perception,a dream
+Context,Positive Perception,a beast
+Context,Positive Perception,workhorse
+Context,Positive Perception,my baby
+Context,Positive Perception,my fav
+Context,Positive Perception,favorite
+Context,Positive Perception,loving this
+Context,Positive Perception,loving it
+Context,Positive Perception,obsessed
+Subject,Defects,issue with
+Subject,Defects,wont open
+Subject,Defects,won't open
+Subject,Defects,glitch
+Subject,Defects,keeps breaking
+Subject,Defects,snapping
+Subject,Defects,fraying
+Subject,Defects,cracked
+Subject,Defects,cracking
+Subject,Defects,a sound
+Subject,Defects,this sound
+Subject,Defects,issues with
+Subject,Defects,issue with
+Subject,Defects,dying
+Subject,Defects,wont't connect
+Subject,Defects,wont connect
+Subject,Defects,errors
+Subject,Defects,malfunction
+Context,Frustration,miserable
+Context,Frustration,is a joke
+Context,Frustration,irritating
+Context,Frustration,frustrated
+Context,Frustration,frustrating
+Context,Frustration,tired of
+Context,Frustration,aggravated
+Context,Frustration,irratates
+Context,Frustration,sick of
+Context,Frustration,absurd
+Context,Frustration,annoying
+Context,Frustration,ridiculous
+Context,Frustration,waste of time
+Context,Frustration,frustrated
+Context,Frustration,terrible
+Context,Frustration,nightmare
+Context,Frustration,outrageous
+Context,Confusion,don't understand
+Context,Confusion,dont understand
+Context,Confusion,not aware
+Context,Confusion,unaware
+Context,Confusion,dont know how
+Context,Confusion,don't know how
+Context,Confusion,confused
+Context,Confusion,can't figure it out
+Context,Confusion,cant figure it out
+Context,Confusion,no sense
+Context,Confusion,confusing
+Context,Confusion,didnt realize
+Context,Confusion,didn't realize
+Context,Negative Perception,not happy
+Context,Negative Perception,pissed off
+Context,Negative Perception,sucks
+Context,Negative Perception,rip off
+Context,Negative Perception,not worth it
+Context,Negative Perception,sick of this
+Context,Negative Perception,hate it
+Context,Negative Perception,hate this
+Context,Negative Perception,stupid
+Context,Negative Perception,not a happy
+Context,Negative Perception,upset
+Context,Compatability,compatible
+Subject,Compatability,compatable
+Subject,Compatability,if this will fit
+Subject,Compatability,fit in
+Subject,Compatability,will this fit
+Subject,Compatability,this work with
+Subject,Performance-Longevity,lasted for miles
+Subject,Car Parts-Internal,rotors
+Subject,Car Parts-Internal,rotors
+Subject,Performance-Longevity,high mileage
+Subject,Performance-Longevity,mileage club
+Subject,Features,lane centering
+Subject,Features,bluetooth
+Subject,Features,backup
+Subject,Features,backup cam
+Subject,Features,backup camera
+Subject,Car Parts-Internal,accelerator
+Subject,Car Parts-Internal,incline
+Subject,Features,heated seats
+Subject,Features,seats
+Subject,Features,power windows
+Subject,Features,windows
+Subject,Features,nav
+Subject,Features,carplay
+Subject,Features,navigation
+Subject,Features,abs
+Subject,Features,anti lock
+Subject,Features,antilock
+Subject,Car Parts-External,headlights
+Subject,Car Parts-External,head lights
+Subject,Car Parts-External,head light
+Subject,Car Parts-External,bumper
+Subject,Car Parts-External,headlight
+Subject,Car Parts-External,trunk
+Subject,Positive Perception,high quality
+Context,Positive Perception,can't beat it
+Context,Positive Perception,amazing
+Context,Positive Perception,wonderful
+Context,Positive Perception,love it
+Context,Positive Perception,insane
+Context,Positive Perception,love my
+Context,Positive Perception,a dream
+Context,Positive Perception,a beast
+Context,Positive Perception,workhorse
+Context,Positive Perception,my baby
+Context,Positive Perception,my fav
+Context,Positive Perception,favorite
+Context,Positive Perception,loving this
+Context,Positive Perception,loving it
+Context,Positive Perception,obsessed
+Subject,Defects,issue with
+Subject,Defects,wont open
+Subject,Defects,won't open
+Subject,Defects,glitch
+Subject,Defects,keeps breaking
+Subject,Defects,snapping
+Subject,Defects,fraying
+Subject,Defects,cracked
+Subject,Defects,cracking
+Subject,Defects,a sound
+Subject,Defects,this sound
+Subject,Defects,issues with
+Subject,Defects,issue with
+Subject,Defects,dying
+Subject,Defects,wont't connect
+Subject,Defects,wont connect
+Subject,Defects,errors
+Subject,Defects,malfunction
+Subject,Defects,leak
+Subject,Defects,leaking
+Subject,Defects,check engine
+Subject,Car Parts-Internal,seatbelt
+Subject,Car Parts-Internal,seatbelts
+Subject,Car Parts-Internal,seat belt
+Subject,Car Parts-Internal,seat belts
+Subject,Car Parts-Internal,braking
+Subject,Car Parts-Internal,brake system
+Subject,Car Parts-Internal,brake
+Subject,Car Parts-External,tires
+Subject,Car Parts-External,tire
+Subject,Car Parts-External,windshield
+Subject,Car Parts-External,window
+Subject,Car Parts-External,wind shield
+Subject,Car Parts-External,wipers
+Subject,Car Parts-External,tail lights
+Subject,Car Parts-External,taillight
+Subject,Car Parts-External,tail light
+Subject,Car Parts-Internal,timing belt
+Subject,Car Parts-Internal,lane assist
+Subject,Car Parts-Internal,dash
+Subject,Car Parts-Internal,dashboard
+Subject,Car Parts-Internal,stereo
+Subject,Defects,water damage
+Context,Confusion,wrap my mind
+Context,Confusion,understand
+Context,Confusion,can't figure
+Context,Confusion,can't find
+Context,New owner,my first
+Context,New owner,first time
+Context,New owner,just bought
+Context,New owner,my new
+Context,New owner,new owner
+Context,New owner,recently joined
+Context,New owner,joined the club
+Context,New owner,joined
+Context,Frustration,annoyed
+Subject,Safety,unsafe
+Subject,Safety,feels safe
+Subject,Safety,scared
+Subject,Safety,safe
+Subject,Safety,deathtrap
+Subject,Safety,death trap
