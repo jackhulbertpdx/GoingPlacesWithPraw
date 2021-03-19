@@ -43,6 +43,6 @@ This project aims to acheive the following:
   
   <b>Final Tableau Dashboard:</b>
   
-  ![Uploading Dashboard.jpg…]()
+![Dashboard](https://user-images.githubusercontent.com/39444980/111852254-722d9900-88d3-11eb-850f-e056bef67d94.jpg)
 
  
