@@ -41,4 +41,8 @@ This project aims to acheive the following:
   - R/ToyotaPickup
 
   
+  <b>Final Tableau Dashboard:</b>
+  
+  ![Uploading Dashboard.jpg…]()
+
  
