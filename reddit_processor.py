@@ -155,6 +155,11 @@ data['model'] = data['combination'].str.extract('(' + '|'.join(model) + ')')
 #Drop unwanted cols from processing
 
 data=data.drop(['combination','combination'], axis=1)
+#set index from column Date
+data = data.set_index('created_utc')
+#if datetimeindex isn't order, order it
+data= data.sort_index()
+data = data.loc[today - pd.Timedelta(days=30):today].reset_index()
 
 #Write Output file
 
