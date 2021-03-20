@@ -47,7 +47,7 @@ r = praw.Reddit(client_id='id',
 # Function that initiates a call to each subreddit in the defined list 
 # and appends the data to a dict and dumps the csv file into our directory.
 
-#Using Limit = None yields an approximately 30 day period of full data from each Subreddit before beginning to sample
+# Using Limit = None yields an approximately 30 day period of full data from each Subreddit before beginning to sample
 
 for i in subs:
     for submission in r.subreddit(i).new(limit=None):
