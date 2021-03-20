@@ -23,7 +23,7 @@ import psycopg2
 
 #Define Output Directory for csv Files
 
-output_directory = "/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Raw Data/"
+output_directory = "My/Path/"
 
 #Datetime value that will be appended to csv file name
 
