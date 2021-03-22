@@ -1,43 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-#!/usr/bin/env python
-# coding: utf-8
-
 import csv
-import sys
-import json
+import io
+from io import StringIO
+import psycopg2
+import glob
+import os
 import pandas as pd
 import numpy as np
 from pandas import DataFrame
 import datetime as dt
 from datetime import datetime
 import praw
-import itertools
-
 import sys
-import json
-import os
-import glob
 import pandas as pd
-import numpy as np
-from pandas import DataFrame
-import texthero as hero
-from texthero import preprocessing
-import datetime as dt
-from datetime import datetime
 from dateutil import tz
-import itertools
 import time
-import nltk
-from nltk.sentiment import SentimentIntensityAnalyzer
-import re 
-import urllib
-from urllib.parse import urlparse
 
 
 # This script extracts data from the Reddit using the PRAW wrapper 
-# from a list of Subreddits and appends them into a csv object
+# from a list of Subreddits and appends them into a csv object and loads into a PostgreSQL table
 
 #Define Output Directory for csv Files
 
@@ -79,17 +62,13 @@ data.to_csv(str(output_directory)+'reddit_data'+str(today)+'.csv', index = False
 
 ####################################################
 
-import csv
-import io
-from io import StringIO
-import psycopg2
+
 # Initiate PostGreSQL 
 conn = psycopg2.connect("dbname=db user=user password=pw port=port")
 cur = conn.cursor()
-import glob
-import os
 
-list_of_files = glob.glob('directory/*') # * grab latest csv writtent to load into postgresql
+# Grab most recent file written to copy into PG table
+list_of_files = glob.glob('directory/*') 
 latest_file = max(list_of_files, key=os.path.getctime)
 print(latest_file)
 with open(latest_file) as f:
