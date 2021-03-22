@@ -14,7 +14,6 @@ import datetime as dt
 from datetime import datetime
 import praw
 import sys
-import pandas as pd
 from dateutil import tz
 import time
 
