@@ -8,7 +8,7 @@ This project aims to acheive the following:
 - Scan Reddit objects for instances of user-defined keywords and language taxonomy.
 
 
-![Blank Diagram](https://user-images.githubusercontent.com/39444980/111358588-bd337c00-8647-11eb-8014-e4fb177ae200.png)
+![Blank Diagram (1)](https://user-images.githubusercontent.com/39444980/111928815-ec941f80-8a71-11eb-8c3f-16c15f1bcec5.png)
 
 
 
