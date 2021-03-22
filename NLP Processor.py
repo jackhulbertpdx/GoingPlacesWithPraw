@@ -4,9 +4,6 @@ import sys
 import pandas as pd
 import numpy as np
 from pandas import DataFrame
-import datetime as dt
-from datetime import datetime
-import itertools
 import os
 import glob
 import texthero as hero
@@ -26,18 +23,14 @@ import psycopg2
 conn = psycopg2.connect("dbname=reddit user=postgres password=jh12345 port=5432")
 cur = conn.cursor()
 import glob
-import os
 
 
 #Today
-
 today = dt.datetime.now()
 
 
 
 #Load Data from PostgreSQL Table
-
-
 sql= "SELECT * from submissions"
 data = sqlio.read_sql_query(sql, conn)
 conn = None
@@ -50,7 +43,7 @@ output_directory = "/Users/jackhulbert/Desktop/Data Science Projects/Reddit Proj
 cur.close()
 
 
-
+########################################################
 
 #Data Conversion
 
@@ -96,6 +89,7 @@ data['Model Year']=data['body_year'].fillna(data['title_year'])
 text = data['body'].astype(str) #Column being evaluated from dataframe
 scores = [] #Container that will house the numerical score given by SID
 sid = SentimentIntensityAnalyzer() #Define Sentiment Model 
+
 #Map sentiment scores to objects in Dataframe, scores will range from -1 to 1
 for word in text:
     ss = sid.polarity_scores(word)
@@ -107,37 +101,31 @@ data['Sentiment_Label']= np.where(data['Sentiment']>.15,'Positive',
                             np.where(data['Sentiment']>=-.15,'Neutral','Negative'))
 
 #Drop unwanted cols from processing
-
 data.drop(['title_year','body_year','selftext'], axis=1)
 
 #//STEP 2//#
-
 #Read in CSV defined and managed by user
 classification = pd.read_csv('/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Classification.csv')
 
 #Pivot data to make each column a keyword class and cell values the keywords from each class
-
 keywords = DataFrame(classification).pivot( columns ='Category',values='Keywords')
 
 #Convert each class in taxonomy to a list and remove NaN values
-
 context = [x for x in keywords['Context'].tolist() if str(x) != 'nan']
 model = [x for x in keywords['Model'].tolist() if str(x) != 'nan']
 subject= [x for x in keywords['Subject'].tolist() if str(x) != 'nan']
 
 #Combine Text columns 'Body' and 'Title ' into one text object so that only one column needs to be scanned using the above lists
-
 data['combination']= (data['clean_body'].str.cat(data['clean_title'],sep=" "))
 
 #Extract keywords values from each list and return match into new column
-
 data['context'] = data['combination'].str.extract('(' + '|'.join(context) + ')')
 data['subject'] = data['combination'].str.extract('(' + '|'.join(subject) + ')')
 data['model'] = data['combination'].str.extract('(' + '|'.join(model) + ')')
 
 #Drop unwanted cols from processing
-
 data=data.drop(['combination','combination'], axis=1)
 data['write_date'] = today
+
 #Write
 data.to_csv(str(output_directory)+'reddit_data'+str(today)+'.csv', index = False, doublequote=True)
