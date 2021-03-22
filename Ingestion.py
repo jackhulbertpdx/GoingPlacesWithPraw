@@ -41,7 +41,7 @@ from urllib.parse import urlparse
 
 #Define Output Directory for csv Files
 
-output_directory = "/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Raw Data/"
+output_directory = "/Users/Mydirectory/"
 
 #Datetime value that will be appended to csv file name
 
@@ -58,9 +58,9 @@ subs = ['Toyota','ToyotaTundra','ToyotaTacoma','Prius','4Runner','ToyotaHighland
 
 #Authenticate PRAW with Client Secret, User Agent, and ID
 
-r = praw.Reddit(client_id='GKhbQBE_zmIfSA',
-                client_secret='ak9O7S3dSduQ4FPCZ1GpacdcTRo0VQ',
-                user_agent='Secret-Strain-8422')
+r = praw.Reddit(client_id='id',
+                client_secret='secret',
+                user_agent='agent')
 
 # Function that initiates a call to each subreddit in the defined list 
 # and appends the data to a dict and dumps the csv file into our directory.
@@ -71,7 +71,9 @@ for i in subs:
         list_of_items.append(sub_dict)
         data=DataFrame(list_of_items)
         data[['id','title', 'url','selftext','name', 'created_utc', 'num_comments','permalink']]= data[['id','title', 'url','selftext','name', 'created_utc', 'num_comments','permalink']].astype(str)
+#Convert UTC to Datetime
 data['created_utc']=(pd.to_datetime(data['created_utc'],unit='s'))
+#Write Output File
 data.to_csv(str(output_directory)+'reddit_data'+str(today)+'.csv', index = False, doublequote=True)
 
 
@@ -81,19 +83,19 @@ import csv
 import io
 from io import StringIO
 import psycopg2
-conn = psycopg2.connect("dbname=reddit user=postgres password=jh12345 port=5432")
+# Initiate PostGreSQL 
+conn = psycopg2.connect("dbname=db user=user password=pw port=port")
 cur = conn.cursor()
 import glob
 import os
 
-list_of_files = glob.glob('/Users/jackhulbert/Desktop/Data Science Projects/Reddit Project/Raw Data/*') # * means all if need specific format then *.csv
+list_of_files = glob.glob('directory/*') # * grab latest csv writtent to load into postgresql
 latest_file = max(list_of_files, key=os.path.getctime)
 print(latest_file)
 with open(latest_file) as f:
     cur.copy_expert('COPY submissions(id, title,url,selftext,name,created_utc,num_comments,permalink) FROM STDIN WITH HEADER CSV', f)
 
 
-#cur.execute("""INSERT INTO submissions (id,title, url,selftext,namepip, created_utc, num_comments,permalink) VALUES (%s, %s,%s, %s,%s, %s,%s, %s,%s);""" ,  (str(output['id']), str(output['title']), str(output['url']),str(output['selftext']),str(output['name']),str(output['score']),str(output['created_utc']),str(output['num_comments']),str(output['permalink'])))
 # Make the changes to the database persistent
 conn.commit()
 cur.close()
