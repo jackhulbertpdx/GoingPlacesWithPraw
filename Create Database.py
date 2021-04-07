@@ -1,3 +1,14 @@
+#############################################################################################
+# Create Database                                                                             
+# by Jack Hulbert                                                                         
+# April 2020                                                                                
+# https://github.com/jackhulbertpdx/GoingPlacesWithPraw                            
+# ----------------------------------------------------------------------------------------- 
+# Script that can be used to initiate a PostGres database to host the data acquired from Reddit in Ingestion.py
+#     
+#                                                                                           
+#############################################################################################
+
 
 #Initiates Postgre database table for reddit feed.
 
