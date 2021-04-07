@@ -1,5 +1,5 @@
 #############################################################################################
-# Create Reddit Table                                                                      
+# Create submissions Table                                                                      
 # by Jack Hulbert                                                                         
 # April 2020                                                                                
 # https://github.com/jackhulbertpdx/GoingPlacesWithPraw                            
