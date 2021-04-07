@@ -1,4 +1,17 @@
-# coding: utf-8
+#############################################################################################
+# NLP Processor                                                                  
+# by Jack Hulbert                                                                         
+# April 2020                                                                                
+# https://github.com/jackhulbertpdx/GoingPlacesWithPraw                            
+# ----------------------------------------------------------------------------------------- 
+# Script that takes Reddit subreddit data stored in a PostGres table and applies sentiment,
+# text cleaning, and keyword extraction functions from the language taxonomy file.
+#                                                                                      
+# The outcome of this script will give us a data set that extracts contextually relevant 
+# keywords to the end user and provides a label for the sentiment of each post (Positive,
+# Negative, or Neutral.
+#############################################################################################
+
 
 import sys
 import pandas as pd
